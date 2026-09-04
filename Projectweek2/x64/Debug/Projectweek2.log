@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\Users\s261258\Documents\Projects\Projectweek2\main.cpp(31,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\s261258\Documents\Projects\Projectweek2\main.cpp(118,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\s261258\Documents\Projects\Projectweek2\main.cpp(250,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Projectweek2.vcxproj -> C:\Users\s261258\Documents\Projects\Projectweek2\x64\Debug\Projectweek2.exe
