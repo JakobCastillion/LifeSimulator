@@ -1,5 +1,27 @@
-﻿  main.cpp
-C:\Users\s261258\Documents\Projects\Projectweek2\main.cpp(31,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\s261258\Documents\Projects\Projectweek2\main.cpp(118,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\s261258\Documents\Projects\Projectweek2\main.cpp(250,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
-  Projectweek2.vcxproj -> C:\Users\s261258\Documents\Projects\Projectweek2\x64\Debug\Projectweek2.exe
+﻿  Functs.cpp
+C:\Users\s261258\Documents\Projects\Projectweek2\LifeSimulator\Functs.cpp(35,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\s261258\Documents\Projects\Projectweek2\LifeSimulator\Functs.cpp(128,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  main.cpp
+C:\Users\s261258\Documents\Projects\Projectweek2\LifeSimulator\Functs.cpp(35,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Users\s261258\Documents\Projects\Projectweek2\LifeSimulator\Functs.cpp(128,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Users\s261258\Documents\Projects\Projectweek2\LifeSimulator\main.cpp(5,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Generating Code...
+main.obj : error LNK2005: "void __cdecl CheckAnswer(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?CheckAnswer@@YAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) already defined in Functs.obj
+main.obj : error LNK2005: "void __cdecl CheckMAnswer(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?CheckMAnswer@@YAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) already defined in Functs.obj
+main.obj : error LNK2005: "void __cdecl CrimeRep(enum Reputation)" (?CrimeRep@@YAXW4Reputation@@@Z) already defined in Functs.obj
+main.obj : error LNK2005: "void __cdecl DayCounter(void)" (?DayCounter@@YAXXZ) already defined in Functs.obj
+main.obj : error LNK2005: "void __cdecl DoCrime(void)" (?DoCrime@@YAXXZ) already defined in Functs.obj
+main.obj : error LNK2005: "void __cdecl Fee(int)" (?Fee@@YAXH@Z) already defined in Functs.obj
+main.obj : error LNK2005: "void __cdecl Gamble(void)" (?Gamble@@YAXXZ) already defined in Functs.obj
+main.obj : error LNK2005: "void __cdecl RandomEvent(void)" (?RandomEvent@@YAXXZ) already defined in Functs.obj
+main.obj : error LNK2005: "void __cdecl SetRep(void)" (?SetRep@@YAXXZ) already defined in Functs.obj
+main.obj : error LNK2005: "int CrimeHistory" (?CrimeHistory@@3HA) already defined in Functs.obj
+main.obj : error LNK2005: "int Day" (?Day@@3HA) already defined in Functs.obj
+main.obj : error LNK2005: "int CrimeChance" (?CrimeChance@@3HA) already defined in Functs.obj
+main.obj : error LNK2005: "class BankAccount Bank" (?Bank@@3VBankAccount@@A) already defined in Functs.obj
+main.obj : error LNK2005: "enum Reputation CurrentRep" (?CurrentRep@@3W4Reputation@@A) already defined in Functs.obj
+C:\Users\s261258\Documents\Projects\Projectweek2\LifeSimulator\x64\Debug\Projectweek2.exe : fatal error LNK1169: one or more multiply defined symbols found

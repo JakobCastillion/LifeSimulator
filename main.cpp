@@ -28,7 +28,7 @@ void CheckAnswer(std::string Answer) {
 	else if (Answer == "N") {
 		exit(0);
 	}
-}  
+}
 // Random daily events
 void RandomEvent() {
 	srand(time(0));
@@ -97,25 +97,25 @@ enum Reputation {
 };
 
 void CrimeRep(Reputation Rep) {
-	switch (Rep) 
+	switch (Rep)
 	{
 	case GoodieTwoShoes:
-		 CrimeChance = 100;
+		CrimeChance = 100;
 		break;
 	case Good:
-		 CrimeChance = 80;
+		CrimeChance = 80;
 		break;
 	case Neutral:
-		 CrimeChance = 60;
+		CrimeChance = 60;
 		break;
 	case Bad:
-		 CrimeChance = 40;
+		CrimeChance = 40;
 		break;
 	case Wanted:
-		 CrimeChance = 20;
+		CrimeChance = 20;
 		break;
 	case Notorious:
-		 CrimeChance = 10;
+		CrimeChance = 10;
 		break;
 	}
 
@@ -149,7 +149,7 @@ void DoCrime() {
 	}
 	else if (seed <= 70) {
 		std::cout << "You Pickpocketed 100 " << std::endl;
-			Bank.Deposit(100);
+		Bank.Deposit(100);
 	}
 	else if (seed <= 80) {
 		std::cout << "Robbed A house, Gained 300" << std::endl;
