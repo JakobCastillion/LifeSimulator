@@ -257,6 +257,10 @@ void CheckMAnswer(std::string Answer) {
 	else if (Answer == "Gamble") {
 		Gamble();
 	}
+	else {
+	Bank.Deposit(50);
+	std::cout << "You made 50 For a Hard Days Work" << std::endl;
+	}
 
 }
 
@@ -273,6 +277,10 @@ void main() {
 	std::cin >> Yn;
 	
 	CheckAnswer(Yn);
+	if (std::cin.fail()) {
+		std::cin.clear();
+		std::cin.ignore();
+	}
 
 	while (Bank.Balance > 0) {
 	DayCounter();
@@ -281,6 +289,10 @@ void main() {
 	std::cout << "" << std::endl;
 	std::cin >> Yn;
 	CheckMAnswer(Yn);
+	if (std::cin.fail()) {
+		std::cin.clear();
+		std::cin.ignore();
+	}
 
 	std::cout << "" << std::endl;
 
@@ -305,6 +317,10 @@ void main() {
 	std::cout << "" << std::endl;
 	std::cin >> Yn;
 	CheckAnswer(Yn);
+	if (std::cin.fail()) {
+		std::cin.clear();
+		std::cin.ignore();
+	}
 	}
 };
 
