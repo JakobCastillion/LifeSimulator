@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdlib>
+#include <fstream>
 int CrimeHistory = 0;
 int Day = 0;
 int CrimeChance = 100;
@@ -26,6 +27,8 @@ void CheckAnswer(std::string Answer) {
 
 	}
 	else if (Answer == "N") {
+		std::ofstream logFile("Days.txt");
+		logFile << Day << std::endl;
 		exit(0);
 	}
 }
@@ -265,13 +268,22 @@ void CheckMAnswer(std::string Answer) {
 }
 
 void main() {
-
-
-	std::string Yn;
 	std::cout << "Welcome ! This game is based on keeping your bank balance above 0, there will be daily fees" << std::endl;
 	std::cout << "and you must make money, you will start with 100" << std::endl;
 	std::cout << "" << std::endl;
+
+
+	std::ifstream dataFile("Days.txt");
+	int Daycount;
+	if (dataFile.is_open()) {
+		dataFile >> Daycount;
+		std::cout << "Your Last game, You lasted " << Daycount << " Days" << std::endl;
+		dataFile.close();
+	}
+
+	std::cout << "" << std::endl;
 	std::cout << "Pressing Y will continue, N to close program / answer no" << std::endl;
+	std::string Yn;
 	std::cout << "" << std::endl;
 	std::cout << "Type Y to Continue" << std::endl;
 	std::cin >> Yn;
@@ -309,6 +321,8 @@ void main() {
 
 	if (Bank.Balance <= 0) {
 	std::cout << "You Ran out of money" << std::endl;
+	std::ofstream logFile("Days.txt");
+	logFile << Day <<std::endl;
 	exit(0);
 	}
 

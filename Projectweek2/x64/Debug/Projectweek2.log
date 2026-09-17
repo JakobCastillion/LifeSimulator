@@ -1,5 +1,5 @@
 ﻿  main.cpp
-C:\Users\s261258\Documents\Projects\Projectweek2\LifeSimulator\main.cpp(34,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\s261258\Documents\Projects\Projectweek2\LifeSimulator\main.cpp(127,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\s261258\Documents\Projects\Projectweek2\LifeSimulator\main.cpp(267,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\s261258\Documents\Projects\Projectweek2\LifeSimulator\main.cpp(37,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\s261258\Documents\Projects\Projectweek2\LifeSimulator\main.cpp(130,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\s261258\Documents\Projects\Projectweek2\LifeSimulator\main.cpp(270,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
   Projectweek2.vcxproj -> C:\Users\s261258\Documents\Projects\Projectweek2\LifeSimulator\x64\Debug\Projectweek2.exe
